@@ -1,5 +1,5 @@
 {
-  "name": "async-debounce",
+  "name": "async-debounce-jt",
   "version": "1.0.0",
   "description": "Guard against calling an asynchronous method multiple times whilst the asynchronous operation is in progress.",
   "main": "index.js",

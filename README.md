@@ -10,12 +10,12 @@ This debounce is _not_ based on time, it's based on a callback which is made onc
 ###Installation
 
 ````
-    npm install async-debounce
+    npm install async-debounce-jt
 ````
 
 ###Invocation
 ````
-    var debounce = require('async-debounce');
+    var debounce = require('async-debounce-jt');
     
     var guarded = debounce(function (args, callback) {
         // do something with the arguments, then call the callback
@@ -33,7 +33,7 @@ The result is the guarded method is only called 10 times.
 ###Code
 
 ````
-    var debounce = require('async-debounce');
+    var debounce = require('async-debounce-jt');
     
     var dostuff = debounce(function (args, callback) {
         setTimeout(function () {
