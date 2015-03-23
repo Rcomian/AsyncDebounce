@@ -1,4 +1,4 @@
-#Async Debounce
+# Async Debounce
 
 Guard against calling an asynchronous function multiple times whilst the asynchronous operation is in progress. Once the operation is complete, the last call made to the function whilst the operation was in progress is made.
 
@@ -6,16 +6,16 @@ Intermediate calls are lost, if no calls are made whilst the asynchronous operat
 
 This debounce is _not_ based on time, it's based on a callback which is made once the operation is completed.
 
-##Usage
-###Installation
+## Usage
+### Installation
 
 ````
-    npm install async-debounce-jt
+    npm install async-debounce
 ````
 
-###Invocation
+### Invocation
 ````
-    var debounce = require('async-debounce-jt');
+    var debounce = require('async-debounce');
     
     var guarded = debounce(function (args, callback) {
         // do something with the arguments, then call the callback
@@ -25,15 +25,15 @@ This debounce is _not_ based on time, it's based on a callback which is made onc
     
 ````
 
-##Example
+## Example
 
 This example calls our method every 10th of a second, but it takes 1 second to complete.
 The result is the guarded method is only called 10 times.
 
-###Code
+### Code
 
 ````
-    var debounce = require('async-debounce-jt');
+    var debounce = require('async-debounce');
     
     var dostuff = debounce(function (args, callback) {
         setTimeout(function () {
@@ -54,7 +54,7 @@ The result is the guarded method is only called 10 times.
         
 ````
 
-###Result
+### Result
 ````
 Called with:  0
 Called with:  9
