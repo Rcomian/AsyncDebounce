@@ -1,0 +1,15 @@
+{
+  "name": "async-debounce",
+  "version": "1.0.0",
+  "description": "Guard against calling an asynchronous method multiple times whilst the asynchronous operation is in progress.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "async",
+    "debounce"
+  ],
+  "author": "Jim Tupper",
+  "license": "ISC"
+}
